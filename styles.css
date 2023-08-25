@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  .contenedor-btn{
+    width: 600px;   
+    height: 450px;
+    display: flex;
+    background-image: url('maquinaloteria.png'); /* Cambia 'ruta-de-la-imagen.jpg' con la ruta de tu imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen */
+    color: #fff; /* Cambia el color del texto para que sea legible */
+    text-align: center;
+    
+    justify-content: center;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1; 
+  }
+  
+  /* Área de acumulación de números sorteados */
+  .area-acumulacion {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: #fff;
+    flex: 1;
+  }
+  
+  .numeros-sorteados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .numero-sorteado {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #010055;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 50%;
+  }
+  
+  .lottery-ball {
+    width: 240px;
+    height: 240px;
+    margin-top: 73px;
+    background-color: #010055;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .number {
+    position: relative;
+  }
+  
+  
+  /* Botón de sorteo */
+  #sortearBtn {
+    display: block;
+    border-radius: 20px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #010055;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #clear{
+    display: block;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #010055;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #count-show{
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #sortearBtn:hover {
+    background-color: #2980b9;
+  }
+  
+  .cont-btn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
