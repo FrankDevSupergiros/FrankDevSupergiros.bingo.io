@@ -1,14 +1,5 @@
 function limpiarSorteo() {
-  const numerosSorteados = document.getElementById("numerosSorteados");
-  const bola = document.querySelector(".number");
-  const count=document.querySelector(".count");
-  
-  numerosSorteados.innerHTML = "";  // Borra los números sorteados en el elemento
-  globoVisible = false;
-  sortearBtn.disabled = false;
-  bola.textContent="";
-  count.textContent="0";
-  // Elimina el contenido de la variable "numerosSorteadosArray" si lo necesitas
+  window.location.reload()
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -19,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const numerosSorteadosArray = [];
   const totalNumeros = 90;
   const count=document.querySelector(".count");
+  sortearBtn.focus();
 
   let index=1;
 
@@ -52,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     index++;
   });
 
-  clear.addEventListener("click", () => {
+  clear.addEventListener("click", () => { 
     limpiarSorteo(); // Llama a la función para limpiar el sorteo
   });
 });
